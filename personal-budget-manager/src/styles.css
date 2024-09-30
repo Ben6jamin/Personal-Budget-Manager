@@ -1,83 +1,130 @@
 /* Global Styles */
 body {
-    background-color: #f5f5f5; /* Light background for contrast */
-    font-family: 'Roboto', sans-serif; /* Clean modern font */
+  background: linear-gradient(135deg, #000000, #333333); /* Vibrant gradient background */
+  color: #ffd700;
+  font-family: 'Poppins', sans-serif; /* Sleek, modern font */
+  padding: 20px;
+}
+
+/* Smooth transition for interactive elements */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Main Container Styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Styling the Cards */
+.card {
+  background-color: #222; /* Darker background for contrast */
+  color: #ffd700; /* Yellow text for elegance */
+  border: 1px solid #ffd700;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect to elevate cards */
+.card:hover {
+  transform: scale(1.05); /* Scale the card slightly on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); /* Deepen shadow */
+}
+
+/* Headings */
+h1.display-4 {
+  font-size: 3.5rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+p.lead {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+/* Form Styles */
+.form-control, .form-select {
+  background-color: #333;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Interactive Button Styling */
+.btn-primary {
+  background: linear-gradient(45deg, #ffd700, #ffcc00);
+  color: #000;
+  border: none;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 25px;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #ffcc00, #ffd700);
+  transform: translateY(-3px); /* Animate upward on hover */
+  box-shadow: 0 10px 20px rgba(255, 204, 0, 0.6);
+}
+
+/* Expense List Styling */
+.list-group-item {
+  background-color: #444;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.list-group-item:hover {
+  background-color: #555;
+  transform: translateX(10px); /* Smooth slide effect on hover */
+}
+
+/* Chart Styling */
+canvas {
+  background-color: #333;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Alerts */
+.alert {
+  background-color: #333;
+  color: #ffd700;
+  border-radius: 8px;
+}
+
+.alert-danger {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.alert-success {
+  background-color: #4dff4d;
+  color: white;
+}
+
+/* Animation for Fade In Effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  /* Container and Card Styling */
-  .container {
-    max-width: 1200px;
-    margin: auto;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .card {
-    background-color: #333; /* Dark background for cards */
-    color: #ffd700; /* Yellow text */
-    border: 1px solid #ffd700; /* Yellow borders */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  }
-  
-  /* Heading and Text Styles */
-  h1.display-4 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffd700;
-  }
-  
-  p.lead {
-    color: #ffd700;
-  }
-  
-  /* Form and Input Styles */
-  .form-control, .form-select {
-    background-color: #222; /* Dark input background */
-    color: #ffd700; /* Yellow text */
-    border: 1px solid #ffd700;
-  }
-  
-  .btn-primary {
-    background-color: #ffd700;
-    border: none;
-    color: #333;
-  }
-  
-  .btn-primary:hover {
-    background-color: #ffcc00;
-    color: #222;
-  }
-  
-  /* Expense List Styles */
-  .list-group-item {
-    background-color: #444;
-    color: #ffd700;
-    border: 1px solid #ffd700;
-  }
-  
-  .list-group-item:hover {
-    background-color: #555;
-  }
-  
-  /* Chart and Summary */
-  canvas {
-    background-color: #222; /* Dark background for charts */
-    border-radius: 8px;
-  }
-  
-  /* Alerts */
-  .alert {
-    background-color: #444;
-    color: #ffd700;
-    border: 1px solid #ffd700;
-  }
-  
-  .alert-danger {
-    background-color: #ff3333;
-    color: white;
-  }
-  
-  .alert-success {
-    background-color: #33cc33;
-    color: white;
-  }
-  
+}
+
+/* Apply Animation */
+.card {
+  animation: fadeInUp 0.5s ease-in-out;
+}
