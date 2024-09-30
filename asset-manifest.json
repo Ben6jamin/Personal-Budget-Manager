@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Personal-Budget-Manager/static/css/main.f06eaa3a.css",
+    "main.js": "/Personal-Budget-Manager/static/js/main.62baaf63.js",
+    "static/js/453.e4f83acf.chunk.js": "/Personal-Budget-Manager/static/js/453.e4f83acf.chunk.js",
+    "index.html": "/Personal-Budget-Manager/index.html",
+    "main.f06eaa3a.css.map": "/Personal-Budget-Manager/static/css/main.f06eaa3a.css.map",
+    "main.62baaf63.js.map": "/Personal-Budget-Manager/static/js/main.62baaf63.js.map",
+    "453.e4f83acf.chunk.js.map": "/Personal-Budget-Manager/static/js/453.e4f83acf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f06eaa3a.css",
+    "static/js/main.62baaf63.js"
+  ]
+}
