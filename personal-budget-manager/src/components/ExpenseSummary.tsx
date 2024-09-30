@@ -1,5 +1,9 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
+import { Chart, ArcElement } from 'chart.js';
+
+// Registering required elements for Chart.js
+Chart.register(ArcElement);
 
 interface Expense {
   amount: number;
@@ -26,7 +30,12 @@ const ExpenseSummary: React.FC<ExpenseSummaryProps> = ({ expenses }) => {
     ],
   };
 
-  return <Pie data={data} />;
+  return (
+    <Pie
+      data={data}
+      key={JSON.stringify(data)} // Unique key forces chart to re-render correctly
+    />
+  );
 };
 
 export default ExpenseSummary;

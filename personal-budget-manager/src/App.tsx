@@ -3,7 +3,7 @@ import ExpenseForm from './components/ExpenseForm';
 import ExpenseList from './components/ExpenseList';
 import ExpenseSummary from './components/ExpenseSummary';
 import BudgetAlert from './components/BudgetAlert';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css'; // Import custom styles
 
 interface Expense {
   amount: number;
