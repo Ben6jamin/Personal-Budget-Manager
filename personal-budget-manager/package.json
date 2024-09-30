@@ -2,6 +2,7 @@
   "name": "personal-budget-manager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Ben6jamin.github.io/Personal-Budget-Manager",
   "dependencies": {
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",  
+    "deploy": "gh-pages -d build"  
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +49,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^6.5.0",
-    "canvas": "^2.11.2"
+    "canvas": "^2.11.2",
+    "gh-pages": "^6.1.1"  
   },
   "jest": {}
 }
